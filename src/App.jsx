@@ -1,6 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import QRCode from 'qrcode.react'
+import Logo from './assets/Logo.png'
 // import logoUdinus from './assets/Logo-Udinus.png'
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     <div className='w-full h-screen flex justify-center items-center'>
       <div className='bg-blue-400 backdrop-blur-2xl p-5 flex flex-col items-center justify-center rounded-xl shadow-md'>
         <div className='w-28 h-28 my-5'>
-          <img src="/src/assets/Logo-Udinus.png" alt="" />
+          <img src={Logo} alt="" />
         </div>
         <div className='mb-2'>
           <h1 className='text-xl font-bold'>Generate QR Code Mahasiswa</h1>
